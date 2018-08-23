@@ -1,0 +1,17 @@
+layout:
+  cells:
+    - posX: 0
+      posY: 0
+      dimW: 12
+      dimH: 2
+      contentURL: tableaux/webgl1.md
+    - posX: 0
+      posY: 2
+      dimW: 6
+      dimH: 9
+      contentURL: 'https://smartdown.site/gallery/Three.md'
+    - posX: 6
+      posY: 2
+      dimW: 6
+      dimH: 9
+      contentURL: 'https://smartdown.site/gallery/Mobius.md'

@@ -1,0 +1,38 @@
+layout:
+  cells:
+    - posX: 0
+      posY: 0
+      dimW: 12
+      dimH: 2
+      content: >-
+        ##### Dan Pegoda's *Something Euge* Cartoon
+
+        [Dan Pegoda](https://www.facebook.com/dannagin) is an actor, artist, storyteller and good friend.
+        He currently resides in Eugene, Oregon, where he writes the *Something Euge* cartoon for
+        the local newspaper, the [Eugene Weekly](https://www.eugeneweekly.com/2018/02/22/just-being-dan/).
+
+        In this poster, I've collected a few of my favorite *Something Euge* cartoons.
+    - posX: 1
+      posY: 7
+      dimW: 6
+      dimH: 4
+      content: >-
+        ![](https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/15994660_10158012604930034_362274878604768747_o.jpg?_nc_cat=0&oh=992236c6c38c587df9bf5a8e40c38c6e&oe=5BFC6454&dl=1)
+    - posX: 0
+      posY: 2
+      dimW: 7
+      dimH: 5
+      content: >-
+        ![](https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/12771647_10156513528630034_8765016096738032423_o.jpg?_nc_cat=0&oh=2f91cd5ecf864aea48e08419bf72f2ec&oe=5BF40CAE&dl=1)
+    - posX: 7
+      posY: 2
+      dimW: 5
+      dimH: 4
+      content: >-
+        ![](https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/19488581_10158831918675034_2343717927514460889_o.jpg?_nc_cat=0&oh=756d01dfd9a50d6a2ab94a8aea056b2a&oe=5BF335B6&dl=1)
+    - posX: 7
+      posY: 6
+      dimW: 5
+      dimH: 4
+      content: >-
+        ![](https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/16819513_10158208157705034_8491218250774293794_o.jpg?_nc_cat=0&oh=1e78e3561ea94952e166ae9a16b9ae22&oe=5BF7F71B&dl=1)

@@ -1,0 +1,175 @@
+[v-cloak] {
+  display: none;
+}
+
+body.container {
+  width:100%;
+  height:100%;
+  padding: 0 15px;
+}
+
+.toggle-author-area-button {
+  height:18px;
+  width:16px;
+  font-size:0.9em;
+  margin:-4px 0 -4px -13px;
+  color:darkslateblue;
+  border:1px solid lightgray;
+  border-radius:5px;
+  background:white;
+  cursor:pointer;
+}
+
+
+div#layoutApp {
+  background: lightyellow;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div#layoutApp .navigationArea {
+  background: aliceblue;
+  width: 100%;
+  padding: 0 12px;
+  margin: 0;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+div#layoutApp .navigationArea button.tableau-button {
+  margin: 5px 10px;
+  padding: 2px 5px;
+}
+
+div#layoutApp .navigationArea button.tableau-button.current {
+  background: yellow;
+  margin: 2px 5px;
+  padding: 5px 10px;
+}
+
+div#layoutApp .navigationArea button.card-button {
+  margin: 2px 5px;
+  padding: 1px 3px;
+}
+
+div#layoutApp .navigationArea button.card-button.focused {
+  background: yellow;
+  margin: 1px 3px;
+  padding: 2px 5px;
+}
+
+
+div#layoutApp .authorArea {
+  background: aliceblue;
+  width: 100%;
+  padding: 5px 15px;
+  margin: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+
+input#sdSelection {
+}
+
+div#layoutApp #content {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div#layoutApp.disable-select * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+div#layoutApp .vue-grid-layout {
+  background: steelblue;
+  margin: 0;
+  padding: 0;
+}
+
+div#layoutApp .vue-grid-layout .vue-grid-item {
+  background: ghostwhite;
+  padding: 0 0 20px 0;
+  width: 100%;
+  height: 100%;
+}
+
+div#layoutApp .vue-grid-layout .vue-grid-item.in-focus {
+  box-shadow: inset 3px -3px 0.5em lightgreen;
+}
+
+
+div.smartdown-tile {
+  margin: 10px 0;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div#layoutApp .vue-grid-layout .vue-grid-item > .vue-resizable-handle {
+  margin: 0;
+  z-index: 5000;
+  position: absolute;
+  width: 10px !important;
+  height: 10px !important;
+  bottom: 0;
+  right: 0;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRvYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0dHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0+DTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2UlMjAxIiB2aWV3Qm94PSIwIDAgNiA2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmMDAiIHZlcnNpb249IjEuMSINCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQl4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjZweCIgaGVpZ2h0PSI2cHgiDT4NCTxnIG9wYWNpdHk9IjAuMzAyIj4NCQk8cGF0aCBkPSJNIDYgNiBMIDAgNiBMIDAgNC4yIEwgNCA0LjIgTCA0LjIgNC4yIEwgNC4yIDAgTCA2IDAgTCA2IDYgTCA2IDYgWiIgZmlsbD0iIzAwMDAwMCIvPg0JPC9nPg08L3N2Zz4=');
+  background-position: bottom left;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+  border: 1px solid darkgray;
+}
+
+div#layoutApp .vue-grid-layout .vue-draggable-handle {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+
+  background: darkslateblue;
+  background: -webkit-linear-gradient(lightblue, darkslateblue);
+  background: -o-linear-gradient(lightblue, darkslateblue);
+  background: -moz-linear-gradient(lightblue, darkslateblue);
+  background: linear-gradient(lightblue, darkslateblue);
+
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+div#layoutApp .vue-grid-layout .hide-draggable {
+  display: none;
+}
+
+.layoutItem {
+  border:1px solid lightgray;
+  min-width: 10%;
+  float: left;
+  display:inline;
+  font-size: 12px;
+  padding: 1px 5px;
+}
+
+#bodyID .footer {
+  bottom: 1px;
+  height: 25px;
+  width: 100%;
+  background: #efefef;
+  border-radius: 5px;
+}
+
+

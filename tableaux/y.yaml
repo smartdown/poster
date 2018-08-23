@@ -1,0 +1,126 @@
+layout:
+  cells:
+    - posX: 0
+      posY: 0
+      dimW: 12
+      dimH: 5
+      content: |+
+        ![](https://imgs.xkcd.com/comics/science.jpg)
+
+        ### [Science](https://xkcd.com/54/)
+
+
+    - posX: 1
+      posY: 5
+      dimW: 11
+      dimH: 5
+      content: |+
+        ![](https://imgs.xkcd.com/comics/headache.png)
+
+        ### [Headache](https://xkcd.com/880/)
+
+
+    - posX: 0
+      posY: 10
+      dimW: 12
+      dimH: 5
+      content: >
+        ### Welcome Tableau, Card 1
+
+
+        Smartdown Tableaux provides an additional way to present Smartdown
+        content by allowing Smartdown documents (aka Cards) to be organized into
+        a two-dimensional layout.
+
+
+        ---
+
+
+        Vector Field Example Based upon
+        https://github.com/winkerVSbecks/material-vector-field
+
+
+        ```p5js/playable
+
+
+        var locs = [];
+
+        function calcVec(x, y) {
+          return new P5.Vector(y - x, - x - y);
+        }
+
+
+        p5.setup = function() {
+          p5.createCanvas(300, 300);
+
+          var res = 20;
+          var countX = p5.ceil(p5.width/res) + 1;
+          var countY = p5.ceil(p5.height/res) + 1;
+
+          for (var j = 0; j < countY; j++) {
+            for (var i = 0; i < countX; i++) {
+              locs.push( new P5.Vector(res*i, res*j) );
+            }
+          };
+
+          p5.noFill();
+          p5.stroke(249, 78, 128);
+
+        };
+
+        p5.draw = function() {
+          p5.background(30, 67, 137);
+          for (var i = locs.length - 1; i >= 0; i--) {
+            var h = calcVec( locs[i].x - p5.mouseX, locs[i].y - p5.mouseY);
+            p5.push();
+              p5.translate(locs[i].x, locs[i].y);
+              p5.rotate(h.heading());
+              p5.line(0, 0, 0, - 15);
+            p5.pop();
+          };
+        };
+
+        ```
+    - posX: 0
+      posY: 15
+      dimW: 12
+      dimH: 4
+      content: |
+        ### Welcome Tableau, Card 2
+
+        [What is your name?](:?Name)
+
+        #### A Few of My Favorite Things
+
+        - Raindrops on Roses
+        - Whiskers on Kittens
+        - Bright copper kettles
+        - Warm woollen mittens
+        - Brown paper packages tied up with strings
+    - posX: 0
+      posY: 19
+      dimW: 12
+      dimH: 5
+      content: >
+        ### Welcome Tableau, Card 3
+
+
+        All of the Cards in a Tableau share the same set of Smartdown variables,
+        enabling reactive behavior to encompass the entire Tableau.
+
+
+        #### Nice to meet you, [](:!Name)
+
+
+
+        #### Raindrops on Roses
+
+
+        ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Raindrops_red_rose.jpg/240px-Raindrops_red_rose.jpg)
+
+
+        #### XKCD Game Jam
+
+
+        ![](https://twitter.com/xkcdGameJam/status/903045117094666240&showMedia)
+

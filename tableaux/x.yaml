@@ -1,0 +1,22 @@
+layout:
+  cells:
+    - posX: 0
+      posY: 0
+      dimW: 12
+      dimH: 5
+      content: |+
+        ![](https://imgs.xkcd.com/comics/science.jpg)
+
+        ### [Science](https://xkcd.com/54/)
+
+
+    - posX: 1
+      posY: 5
+      dimW: 11
+      dimH: 5
+      content: |+
+        ![](https://imgs.xkcd.com/comics/headache.png)
+
+        ### [Headache](https://xkcd.com/880/)
+
+
